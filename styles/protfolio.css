@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .open-sans-normal {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -5,6 +9,7 @@
   font-variation-settings:
     "wdth" 100;
 }
+
 
 /* shared style */
 .text-primary{
@@ -22,13 +27,42 @@
   border-radius: 5px;
   border: none;
 }
+.section-title{
+  font-weight: bold;
+  font-size: 35px;
+  color: #181818;
+}
+.section-description{
+  font-size: 18px;
+  color: #757575;
+}
+.section-info{
+  font-size: 20px;
+  color: #757575;
+}
+.section-h6-info{
+  font-weight: bold;
+  font-size: 20px;
+  color: #474747;
+}
+.secondary-bg{
+  background-color: #FFF8F3;
+}
+
+/* header */
+.header{
+  background-image: url(../assets/images/developer.png),url(../assets/images/header_bg.png);
+  background-repeat: no-repeat;
+  background-position: top left,bottom right;
+}
 
 /* nav style */
+
 nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 100px;
+    margin: 30px 130px;
 }
 .nav-title{
   font-weight: 800;
@@ -54,13 +88,14 @@ nav ul{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 35px
+  margin: 0 40px 0 118px;
+  height: 680px;
 
 }
 .banner-greeting{
   font-weight:600 ;
   font-size: 30px;
-  margin-bottom: 2px;
+  /* margin-bottom: 2px; */
 }
 .banner-title{
   font-weight: bold;
@@ -75,9 +110,50 @@ nav ul{
   width: 465px;
 }
 .banner-profile-picture{
-  width: 400px;
-  height: 465px;;
+  width: 590px;
+  height: 680px;
+  
 }
 .banner-content{
-  margin: 0px 100px;
+  
+  max-width: 590px;
+  height: ;
+}
+
+/* main style */
+.about{
+  height: 550px;
+  width: 1100px;
+  margin: 100px auto;
+  align-content: center;
+  
+  
+}
+.about_content{
+  height: 230px;
+  width: 820px;
+  text-align: center;
+  background-color: #FFFFFF;
+  margin: 150px;
+  border: 2px solid black;
+  /* padding: 5px; */
+  
+}
+.about_info{
+  display: flex;
+  /* flex-direction: column; */
+  gap: 50px;
+  padding: 20px;
+  
+  
+}
+.per-info{
+  height: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.per-info h6{
+  margin: 30px;
+
 }
